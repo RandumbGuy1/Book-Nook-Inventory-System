@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.shelves {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 200px;
+    border: 5px solid #2f2c46;  
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 3px;
+  
+    background-color: #C3C6D5;
+    color: #000000;
+    transition: 0.4s;
+}
+
+.section:hover {
+    width: 200px;
+    height: 400px;
+    
+    border: 0px; 
+    background-color: #fb8004;
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px #000000;
+  }
+
+img {
+    margin: 10px;
+    max-width:100%;
+    max-width:60%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #380f0f;  
+}
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
