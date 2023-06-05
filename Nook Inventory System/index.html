@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Book Nook Library</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -15,12 +15,15 @@
     <hr class="dashed">
 
     <h2>Submit Book Form</h2>
-    <form action="/action_page.php">
-    <label for="fname">Title:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Author:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
+    <form id = "form" method = "post">
+        <input type = "text" id = "name" placeholder="Title"/>
+        <input type = "number" id = "genre" placeholder="Genre Id"/>
+        <input type = "text" id = "author" placeholder="Author"/>
+        <input type = "text" id = "publish" placeholder="Publish Date"/>
+        <input type = "text" id = "image" placeholder="Image Link"/>
+        <input type = "text" id = "link" placeholder="Document Link"/>
+        <input type = "text" id = "color" placeholder="Color Hex Code"/>
+        <input type = "submit" value = "Submit"/>
     </form> 
 
     <script src="script.js"></script>

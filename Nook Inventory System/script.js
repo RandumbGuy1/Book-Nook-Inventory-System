@@ -26,3 +26,30 @@ fetch(endpoint)
         shelves = json.books;
         render_books();
     })
+
+const form = document.getElementById('form');
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var genre = document.getElementById('genre').value;
+    var author = document.getElementById('author').value;
+    var publish = document.getElementById('publish').value;
+    var image = document.getElementById('image').value;
+    var link = document.getElementById('link').value;
+    var color = document.getElementById('color').value;
+
+    shelves.push(
+        {
+            "name": name,
+            "genre": genre,
+            "author": author,
+            "publish": publish,
+            "image": image,
+            "link": link,
+            "color": color
+        }
+    )
+
+    render_books()
+});
